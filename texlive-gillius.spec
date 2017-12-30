@@ -5,8 +5,8 @@
 # catalog-license gpl2
 # catalog-version undef
 Name:		texlive-gillius
-Version:	20131104
-Release:	9
+Version:	20170414
+Release:	1
 Summary:	Gillius fonts with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/gillius
