@@ -5,7 +5,7 @@
 # catalog-license gpl2
 # catalog-version undef
 Name:		texlive-gillius
-Version:	20170414
+Version:	20180303
 Release:	1
 Summary:	Gillius fonts with LaTeX support
 Group:		Publishing
