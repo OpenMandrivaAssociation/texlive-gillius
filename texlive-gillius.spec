@@ -1,18 +1,12 @@
-# revision 32068
-# category Package
-# catalog-ctan /fonts/gillius
-# catalog-date 2013-11-04 00:06:06 +0100
-# catalog-license gpl2
-# catalog-version undef
 Name:		texlive-gillius
-Version:	20190228
+Version:	64865
 Release:	1
 Summary:	Gillius fonts with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/gillius
 License:	GPL2
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gillius.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gillius.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gillius.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gillius.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -26,12 +20,12 @@ Harendal. According to the designer, the fonts were inspired by
 Gill Sans.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -360,7 +354,7 @@ Gill Sans.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
