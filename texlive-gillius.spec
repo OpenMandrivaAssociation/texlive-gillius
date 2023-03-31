@@ -1,6 +1,6 @@
 Name:		texlive-gillius
 Version:	64865
-Release:	1
+Release:	2
 Summary:	Gillius fonts with LaTeX support
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/gillius
