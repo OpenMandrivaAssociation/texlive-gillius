@@ -3,7 +3,7 @@ Version:	64865
 Release:	2
 Summary:	Gillius fonts with LaTeX support
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/gillius
+URL:		https://www.ctan.org/tex-archive/fonts/gillius
 License:	GPL2
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gillius.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/gillius.doc.r%{version}.tar.xz
