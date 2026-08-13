@@ -12,7 +12,8 @@ Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/gillius.r%{tl_re
 Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/gillius.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
 BuildSystem:	texlive
-Provides:	texlive(%{tl_name}) = %{tl_revision}
+Requires:	texlive-tlpkg
+Provides:	texlive(%{tl_name}) = %{version}
 
 %description
 This package provides LaTeX, pdfLaTeX, XeLaTeX and LuaLaTeX support for
@@ -20,3 +21,10 @@ the Gillius and Gillius No. 2 families of sans serif fonts and condensed
 versions of them, designed by Hirwen Harendal. According to the
 designer, the fonts were inspired by Gill Sans.
 
+
+%install -a
+mkdir -p %{buildroot}%{_texmf_updmap_d}
+cat > %{buildroot}%{_texmf_updmap_d}/%{tl_name} <<'TL_DROPIN_EOF'
+# from gillius:
+Map gillius.map
+TL_DROPIN_EOF
